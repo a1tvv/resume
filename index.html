@@ -3,94 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Алтай Абдурахим | Портфолио</title>
+    <title>Алтай Абдурахим — Full-Stack / Python Engineer</title>
+    <meta name="description" content="Портфолио Алтая Абдурахима: Junior Full-Stack разработчик и Python-инженер. Django, PostgreSQL, REST API.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap&subset=cyrillic,latin" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Приводочные метки по углам страницы — подпись всего документа -->
+    <span class="reg-mark reg-tl" aria-hidden="true"></span>
+    <span class="reg-mark reg-tr" aria-hidden="true"></span>
+
     <nav class="navbar">
-        <div class="logo">ab.dussi</div>
+        <a href="#top" class="logo">ab.dussi<span class="logo-dot"></span></a>
         <ul class="nav-links">
-            <li><a href="#about">Обо мне</a></li>
-            <li><a href="#skills">Стек</a></li>
-            <li><a href="#projects">Проекты</a></li>
-            <li><a href="#achievements">Достижения</a></li>
+            <li><a href="#about">01 Обо мне</a></li>
+            <li><a href="#skills">02 Стек</a></li>
+            <li><a href="#projects">03 Проекты</a></li>
+            <li><a href="#log">04 Лог</a></li>
         </ul>
+        <a href="#contact" class="nav-cta">Контакт</a>
     </nav>
 
-    <header id="about" class="hero-section">
-        <div class="hero-content">
-            <h1>Алтай Абдурахим</h1>
-            <h2 class="highlight">Junior Full-Stack Developer & Python Engineer</h2>
-            <p>
-                Студент направления Information Technology в International University of Central Asia. 
-                Специализируюсь на создании надежных веб-приложений: от продуманной архитектуры баз данных до удобного пользовательского интерфейса.
-            </p>
-            <a href="#projects" class="btn-primary">Смотреть проекты</a>
+    <header id="top" class="hero">
+        <div class="hero-eyebrow">§ 00 — Портфолио / Обновлено <span id="rev-date"></span></div>
+
+        <h1 class="hero-name">
+            <span class="line" data-reveal>Алтай</span>
+            <span class="line" data-reveal>Абдурахим<span class="caret" aria-hidden="true"></span></span>
+        </h1>
+
+        <div class="hero-spec" id="about">
+            <div class="spec-row">
+                <span class="spec-key">Роль</span>
+                <span class="spec-val">Full-Stack Developer · Python Engineer</span>
+            </div>
+            <div class="spec-row">
+                <span class="spec-key">Профиль</span>
+                <span class="spec-val">Backend-архитектура, базы данных, деплой боевых сервисов</span>
+            </div>
+            <div class="spec-row">
+                <span class="spec-key">Учёба</span>
+                <span class="spec-val">Information Technology — International University of Central Asia</span>
+            </div>
+            <div class="spec-row">
+                <span class="spec-key">Статус</span>
+                <span class="spec-val status-open">
+                    <span class="status-dot" aria-hidden="true"></span>Открыт к работе
+                </span>
+            </div>
+        </div>
+
+        <p class="hero-lede">
+            Собираю веб-приложения целиком: от схемы базы данных и REST-логики
+            до интерфейса, который не стыдно показать. Довожу проекты до боевого
+            сервера, а не до папки «черновики».
+        </p>
+
+        <div class="hero-actions">
+            <a href="#projects" class="btn">Смотреть проекты <span aria-hidden="true">→</span></a>
+            <a href="#contact" class="btn btn-ghost">Связаться</a>
         </div>
     </header>
 
-    <section id="skills" class="section">
-        <h2>Технологический стек</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Backend</h3>
-                <p>Python, Django, PostgreSQL, REST API</p>
+    <main>
+        <section id="skills" class="section">
+            <div class="section-head">
+                <span class="section-index">§ 02</span>
+                <h2>Технологический стек</h2>
             </div>
-            <div class="skill-category">
-                <h3>Frontend</h3>
-                <p>JavaScript, HTML, CSS, Flet</p>
-            </div>
-            <div class="skill-category">
-                <h3>Инфраструктура & ОС</h3>
-                <p>Ubuntu Linux, Vercel, Selectel, DigitalOcean S3</p>
-            </div>
-        </div>
-    </section>
 
-    <section id="projects" class="section bg-darker">
-        <h2>Мои проекты</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>RentUi (rentui.kg)</h3>
-                    <span class="tech-badge">Django + JS</span>
+            <div class="datasheet">
+                <div class="ds-row" data-reveal>
+                    <span class="ds-cat">Backend</span>
+                    <span class="ds-items">Python · Django · PostgreSQL · REST API</span>
                 </div>
-                <p>Платформа для поиска и аренды недвижимости. Настроена интеграция сервисов, автоматизированный интерфейс сообщений (Telegram-бот) и деплой на боевой сервер.</p>
-            </div>
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Svet Sunny</h3>
-                    <span class="tech-badge">Full-Stack + S3</span>
+                <div class="ds-row" data-reveal>
+                    <span class="ds-cat">Frontend</span>
+                    <span class="ds-items">JavaScript · HTML · CSS · Flet</span>
                 </div>
-                <p>Веб-ресурс с настроенными правами доступа и интеграцией облачного объектного хранилища DigitalOcean S3 для управления медиафайлами.</p>
+                <div class="ds-row" data-reveal>
+                    <span class="ds-cat">Инфра / ОС</span>
+                    <span class="ds-items">Ubuntu Linux · Vercel · Selectel · DigitalOcean S3</span>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="achievements" class="section">
-        <h2>Активность и Достижения</h2>
-        <ul class="timeline">
-            <li>
-                <strong>UrbanTech Hackathon</strong> — Участник хакатона при поддержке Yandex Kyrgyzstan.
-            </li>
-            <li>
-                <strong>AI Fest (Бишкек)</strong> — Участник фестиваля, посвященного технологиям искусственного интеллекта.
-            </li>
-            <li>
-                <strong>Открыт к предложениям</strong> — Активно рассматриваю позиции Backend, Django, QA/Tester и Project Manager.
-            </li>
+        <section id="projects" class="section">
+            <div class="section-head">
+                <span class="section-index">§ 03</span>
+                <h2>Проекты</h2>
+            </div>
+
+            <div class="projects">
+                <article class="project" data-reveal>
+                    <div class="project-top">
+                        <span class="project-num">01</span>
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">RentUi</h3>
+                    <p class="project-url">rentui.kg</p>
+                    <p class="project-desc">
+                        Платформа поиска и аренды недвижимости. Настроил интеграцию
+                        сервисов, автоматическую переписку через Telegram-бота и деплой
+                        на боевой сервер — проект работает в проде.
+                    </p>
+                </article>
+
+                <article class="project" data-reveal>
+                    <div class="project-top">
+                        <span class="project-num">02</span>
+                        <div class="project-tags">
+                            <span class="tag">Full-Stack</span>
+                            <span class="tag">S3</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Svet Sunny</h3>
+                    <p class="project-url">веб-сервис</p>
+                    <p class="project-desc">
+                        Веб-ресурс с настроенными правами доступа и подключённым
+                        объектным хранилищем DigitalOcean S3 для управления
+                        медиафайлами.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="log" class="section">
+            <div class="section-head">
+                <span class="section-index">§ 04</span>
+                <h2>Активность и достижения</h2>
+            </div>
+
+            <ol class="log">
+                <li class="log-item" data-reveal>
+                    <span class="log-mark">EVT</span>
+                    <div class="log-body">
+                        <strong>UrbanTech Hackathon</strong>
+                        <span>Участник хакатона при поддержке Yandex Kyrgyzstan.</span>
+                    </div>
+                </li>
+                <li class="log-item" data-reveal>
+                    <span class="log-mark">EVT</span>
+                    <div class="log-body">
+                        <strong>AI Fest — Бишкек</strong>
+                        <span>Участник фестиваля технологий искусственного интеллекта.</span>
+                    </div>
+                </li>
+                <li class="log-item" data-reveal>
+                    <span class="log-mark log-mark-open">NOW</span>
+                    <div class="log-body">
+                        <strong>Открыт к предложениям</strong>
+                        <span>Рассматриваю позиции: Backend, Django, QA / Tester, Project Manager.</span>
+                    </div>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <span class="reg-mark reg-bl" aria-hidden="true"></span>
+        <span class="reg-mark reg-br" aria-hidden="true"></span>
+
+        <div class="footer-head">
+            <span class="section-index">§ 05</span>
+            <h2>Связаться</h2>
+        </div>
+        <p class="footer-lede">Открыт для новых проектов и вакансий. Пишите — отвечаю быстро.</p>
+
+        <ul class="contacts">
+            <li><a href="#" class="contact-link"><span class="contact-key">GH</span>GitHub</a></li>
+            <li><a href="#" class="contact-link"><span class="contact-key">TG</span>Telegram</a></li>
+            <li><a href="#" class="contact-link"><span class="contact-key">IN</span>LinkedIn</a></li>
         </ul>
-    </section>
 
-    <footer class="footer">
-        <h2>Свяжитесь со мной</h2>
-        <p>Готов обсудить новые проекты и вакансии.</p>
-        <div class="social-links">
-            <a href="#" class="social-link">GitHub</a>
-            <a href="#" class="social-link">Telegram</a>
-            <a href="#" class="social-link">LinkedIn</a>
-        </div>
-        <p class="copyright">© <span id="year"></span> Алтай Абдурахим. All rights reserved.</p>
+        <p class="copyright">© <span id="year"></span> Алтай Абдурахим · Собрано вручную, без шаблонов</p>
     </footer>
 
     <script src="script.js"></script>

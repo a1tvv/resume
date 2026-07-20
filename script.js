@@ -1,20 +1,24 @@
-// Автоматическое обновление года в подвале
+// Год в подвале
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Эффект появления элементов при прокрутке (опционально, но выглядит круто)
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = 1;
-            entry.target.style.transform = 'translateY(0)';
-        }
-    });
-});
+// Дата «ревизии» в шапке hero (формат datasheet: ГГГГ.ММ)
+const now = new Date();
+const rev = `${now.getFullYear()}.${String(now.getMonth() + 1).padStart(2, '0')}`;
+const revEl = document.getElementById('rev-date');
+if (revEl) revEl.textContent = rev;
 
-// Применяем анимацию к карточкам проектов и навыкам
-document.querySelectorAll('.skill-category, .project-card, .timeline li').forEach((el) => {
-    el.style.opacity = 0;
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'all 0.6s ease-out';
-    observer.observe(el);
-});
+// Появление элементов при прокрутке
+const reveal = document.querySelectorAll('[data-reveal]');
+if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in');
+                obs.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+    reveal.forEach((el) => io.observe(el));
+} else {
+    reveal.forEach((el) => el.classList.add('in'));
+}
