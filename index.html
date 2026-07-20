@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap&subset=cyrillic,latin" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
     <!-- Приводочные метки по углам страницы — подпись всего документа -->
@@ -23,7 +25,7 @@
             <li><a href="#projects">03 Проекты</a></li>
             <li><a href="#log">04 Лог</a></li>
         </ul>
-        <a href="#contact" class="nav-cta">Контакт</a>
+        <a href="#contact" class="nav-cta">Контакты</a>
     </nav>
 
     <header id="top" class="hero">
@@ -41,7 +43,7 @@
             </div>
             <div class="spec-row">
                 <span class="spec-key">Профиль</span>
-                <span class="spec-val">Backend-архитектура, базы данных, деплой боевых сервисов</span>
+                <span class="spec-val">Backend-архитектура, базы данных, S3, ИИ автоматизация</span>
             </div>
             <div class="spec-row">
                 <span class="spec-key">Учёба</span>
@@ -57,8 +59,8 @@
 
         <p class="hero-lede">
             Собираю веб-приложения целиком: от схемы базы данных и REST-логики
-            до интерфейса, который не стыдно показать. Довожу проекты до боевого
-            сервера, а не до папки «черновики».
+            до интерфейса, который не стыдно показать. Довожу проекты от А до Я
+            , а не до папки «черновики».
         </p>
 
         <div class="hero-actions">
@@ -85,7 +87,7 @@
                 </div>
                 <div class="ds-row" data-reveal>
                     <span class="ds-cat">Инфра / ОС</span>
-                    <span class="ds-items">Ubuntu Linux · Vercel · Selectel · DigitalOcean S3</span>
+                    <span class="ds-items">Ubuntu Linux · MacOs</span>
                 </div>
             </div>
         </section>
@@ -97,6 +99,7 @@
             </div>
 
             <div class="projects">
+
                 <article class="project" data-reveal>
                     <div class="project-top">
                         <span class="project-num">01</span>
@@ -106,10 +109,12 @@
                         </div>
                     </div>
                     <h3 class="project-title">RentUi</h3>
-                    <p class="project-url">rentui.kg</p>
+                    <p class="project-url">
+                        <a href="https://www.rentui.it.com/">rentui.kg</a>
+                    </p>
                     <p class="project-desc">
                         Платформа поиска и аренды недвижимости. Настроил интеграцию
-                        сервисов, автоматическую переписку через Telegram-бота и деплой
+                        сервисов, и деплой
                         на боевой сервер — проект работает в проде.
                     </p>
                 </article>
@@ -123,13 +128,34 @@
                         </div>
                     </div>
                     <h3 class="project-title">Svet Sunny</h3>
-                    <p class="project-url">веб-сервис</p>
+                    <p class="project-url">
+                        <a href="https://www.nur-as-sunnah.com/">веб-сервис</a>
+                    </p>
                     <p class="project-desc">
                         Веб-ресурс с настроенными правами доступа и подключённым
                         объектным хранилищем DigitalOcean S3 для управления
                         медиафайлами.
                     </p>
                 </article>
+
+                <article class="project" data-reveal>
+                    <div class="project-top">
+                        <span class="project-num">03</span>
+                        <div class="project-tags">
+                            <span class="tag">FastApi</span>
+                            <span class="tag">TypeScript</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Ansar HomeWear</h3>
+                    <p class="project-url">
+                       <a href="https://gb-ansar.vercel.app/">ansahw</a>
+                    </p>
+                    <p class="project-desc">
+                        Сервис по автоматизаций работы склада
+                        кассиров на базе ИИ
+                    </p>
+                </article>
+
             </div>
         </section>
 
@@ -143,22 +169,31 @@
                 <li class="log-item" data-reveal>
                     <span class="log-mark">EVT</span>
                     <div class="log-body">
-                        <strong>UrbanTech Hackathon</strong>
-                        <span>Участник хакатона при поддержке Yandex Kyrgyzstan.</span>
+                        <strong>RentUi (6 месяцев разработки с полного нуля):</strong>
+                        <span>
+                            Прошел путь от старта команды из 12 человек до жесткого фильтра, где в сухом остатке осталось двое.
+                            Довел сложный full-stack проект по поиску и аренде недвижимости до 
+                            полноценного продакшена и деплоя на боевой сервер.
+                        </span>
                     </div>
                 </li>
                 <li class="log-item" data-reveal>
                     <span class="log-mark">EVT</span>
                     <div class="log-body">
-                        <strong>AI Fest — Бишкек</strong>
-                        <span>Участник фестиваля технологий искусственного интеллекта.</span>
+                        <strong>GBansar / Grand Bazaar (1.5 месяца)</strong>
+                        <span>
+                            С нуля спроектировал и запустил систему автоматизации склада для ритейла. 
+                            Залил базу данных на 80+ позиций с пагинацией, внедрил мобильное управление через 
+                            Telegram-бота для защиты админки и вывел проект на этап реальной обкатки и использования 
+                            кассирами на складе.
+                        </span>
                     </div>
                 </li>
                 <li class="log-item" data-reveal>
                     <span class="log-mark log-mark-open">NOW</span>
                     <div class="log-body">
                         <strong>Открыт к предложениям</strong>
-                        <span>Рассматриваю позиции: Backend, Django, QA / Tester, Project Manager.</span>
+                        <span>Рассматриваю позиции: Backend Django Developer, Project Manager.</span>
                     </div>
                 </li>
             </ol>
@@ -176,12 +211,13 @@
         <p class="footer-lede">Открыт для новых проектов и вакансий. Пишите — отвечаю быстро.</p>
 
         <ul class="contacts">
-            <li><a href="#" class="contact-link"><span class="contact-key">GH</span>GitHub</a></li>
-            <li><a href="#" class="contact-link"><span class="contact-key">TG</span>Telegram</a></li>
-            <li><a href="#" class="contact-link"><span class="contact-key">IN</span>LinkedIn</a></li>
+            <li><a href="https://github.com/a1tvv" class="contact-link" target="_blank" rel="noopener"><span class="contact-key"><i class="bi bi-github" style="font-size:1.1rem"></i></span>GitHub</a></li>
+            <li><a href="https://t.me/abdurtwhd" class="contact-link" target="_blank" rel="noopener"><span class="contact-key"><i class="bi bi-telegram" style="font-size:1.1rem"></i></span>Telegram</a></li>
+            <li><a href="https://www.instagram.com/ab.dussi" class="contact-link" target="_blank" rel="noopener"><span class="contact-key"><i class="bi bi-instagram" style="font-size:1.1rem"></i></span>Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@ab.dussi" class="contact-link" target="_blank" rel="noopener"><span class="contact-key"><i class="bi bi-tiktok" style="font-size:1.1rem"></i></span>TikTok</a></li>
         </ul>
 
-        <p class="copyright">© <span id="year"></span> Алтай Абдурахим · Собрано вручную, без шаблонов</p>
+        <p class="copyright">© <span id="year"></span> Алтай Абдурахим</p>
     </footer>
 
     <script src="script.js"></script>
