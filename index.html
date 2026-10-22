@@ -98,64 +98,97 @@
                 <h2>Проекты</h2>
             </div>
 
-            <div class="projects">
+            <!-- Слева список проектов, справа панель со скриншотом активного проекта.
+                 На мобилке панели нет: скриншот раскрывается внутри пункта списка. -->
+            <div class="fp">
+                <ul class="fp-list">
 
-                <article class="project" data-reveal>
-                    <div class="project-top">
-                        <span class="project-num">01</span>
-                        <div class="project-tags">
-                            <span class="tag">Django</span>
-                            <span class="tag">JavaScript</span>
+                    <li data-reveal>
+                        <div class="fp-item is-active" data-fp-item>
+                            <button type="button" class="fp-head" aria-expanded="true" aria-controls="fp-body-1">
+                                <span class="fp-num">1</span>
+                                <span class="fp-title">RentUi</span>
+                            </button>
+                            <div class="fp-body" id="fp-body-1">
+                                <div class="fp-body-inner">
+                                    <div class="fp-meta">
+                                        <a href="https://www.rentui.it.com/" class="fp-url">rentui.it.com</a>
+                                        <span class="tag">Django</span>
+                                        <span class="tag">JavaScript</span>
+                                    </div>
+                                    <p class="fp-desc">
+                                        Платформа поиска и аренды недвижимости. Настроил интеграцию
+                                        сервисов и деплой (развертывание)
+                                        на боевой сервер — проект работает в проде.
+                                    </p>
+                                    <div class="fp-card fp-card-inline">
+                                        <img src="assets/shots/rentui.webp" alt="Экраны RentUi: о сервисе, главная, регистрация" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <h3 class="project-title">RentUi</h3>
-                    <p class="project-url">
-                        <a href="https://www.rentui.it.com/">rentui.it.kg</a>
-                    </p>
-                    <p class="project-desc">
-                        Платформа поиска и аренды недвижимости. Настроил интеграцию
-                        сервисов и деплой (развертывание)
-                        на боевой сервер — проект работает в проде.
-                    </p>
-                </article>
+                    </li>
 
-                <article class="project" data-reveal>
-                    <div class="project-top">
-                        <span class="project-num">02</span>
-                        <div class="project-tags">
-                            <span class="tag">Full-Stack</span>
-                            <span class="tag">S3</span>
+                    <li data-reveal style="transition-delay: 70ms">
+                        <div class="fp-item" data-fp-item>
+                            <button type="button" class="fp-head" aria-expanded="false" aria-controls="fp-body-2">
+                                <span class="fp-num">2</span>
+                                <span class="fp-title">Svet Sunny</span>
+                            </button>
+                            <div class="fp-body" id="fp-body-2">
+                                <div class="fp-body-inner">
+                                    <div class="fp-meta">
+                                        <a href="https://www.nur-as-sunnah.com/" class="fp-url">nur-as-sunnah.com</a>
+                                        <span class="tag">Full-Stack</span>
+                                        <span class="tag">S3</span>
+                                    </div>
+                                    <p class="fp-desc">
+                                        Веб-ресурс с настроенными правами доступа и подключённым
+                                        объектным хранилищем DigitalOcean S3 для управления
+                                        медиафайлами.
+                                    </p>
+                                    <div class="fp-card fp-card-inline">
+                                        <img src="assets/shots/svet-sunny.webp" alt="Главная страница nur-as-sunnah.com" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <h3 class="project-title">Svet Sunny</h3>
-                    <p class="project-url">
-                        <a href="https://www.nur-as-sunnah.com/">nur-as-sunnah.com</a>
-                    </p>
-                    <p class="project-desc">
-                        Веб-ресурс с настроенными правами доступа и подключённым
-                        объектным хранилищем DigitalOcean S3 для управления
-                        медиафайлами.
-                    </p>
-                </article>
+                    </li>
 
-                <article class="project" data-reveal>
-                    <div class="project-top">
-                        <span class="project-num">03</span>
-                        <div class="project-tags">
-                            <span class="tag">FastApi</span>
-                            <span class="tag">TypeScript</span>
+                    <li data-reveal style="transition-delay: 140ms">
+                        <div class="fp-item" data-fp-item>
+                            <button type="button" class="fp-head" aria-expanded="false" aria-controls="fp-body-3">
+                                <span class="fp-num">3</span>
+                                <span class="fp-title">Ansar HomeWear</span>
+                            </button>
+                            <div class="fp-body" id="fp-body-3">
+                                <div class="fp-body-inner">
+                                    <div class="fp-meta">
+                                        <a href="https://gb-ansar.vercel.app/" class="fp-url">gb-ansar</a>
+                                        <span class="tag">FastApi</span>
+                                        <span class="tag">TypeScript</span>
+                                    </div>
+                                    <p class="fp-desc">
+                                        Сервис по автоматизаций работы склада
+                                        кассиров на базе ИИ
+                                    </p>
+                                    <div class="fp-card fp-card-inline">
+                                        <img src="assets/shots/gb-ansar.webp" alt="Экраны Ansar HomeWear: главная, каталог, карточка товара, заявка" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <h3 class="project-title">Ansar HomeWear</h3>
-                    <p class="project-url">
-                       <a href="https://gb-ansar.vercel.app/">gb-ansar</a>
-                    </p>
-                    <p class="project-desc">
-                        Сервис по автоматизаций работы склада
-                        кассиров на базе ИИ
-                    </p>
-                </article>
+                    </li>
 
+                </ul>
+
+                <div class="fp-panel">
+                    <div class="fp-card">
+                        <img class="fp-media is-active" src="assets/shots/rentui.webp" alt="Экраны RentUi: о сервисе, главная, регистрация">
+                        <img class="fp-media" src="assets/shots/svet-sunny.webp" alt="Главная страница nur-as-sunnah.com" aria-hidden="true" loading="lazy">
+                        <img class="fp-media" src="assets/shots/gb-ansar.webp" alt="Экраны Ansar HomeWear: главная, каталог, карточка товара, заявка" aria-hidden="true" loading="lazy">
+                    </div>
+                </div>
             </div>
         </section>
 
