@@ -70,7 +70,7 @@
 <img src="assets/en/titles/contacts.svg" alt="Contacts" width="100%">
 
 <p>
-<a href="https://github.com/a1tvv"><img src="assets/contact/github.svg" alt="GitHub: a1tvv" width="32.5%"></a><a href="https://t.me/abdurtwhd"><img src="assets/contact/telegram.svg" alt="Telegram: @abdurtwhd" width="32.5%"></a><a href="https://wa.me/996554016042"><img src="assets/contact/whatsapp.svg" alt="WhatsApp: +996 554 016 042" width="32.5%"></a><br>
+<a href="https://github.com/a1tvv"><img src="assets/contact/github.svg" alt="GitHub: a1tvv" width="32.5%"></a><a href="https://t.me/dusi84"><img src="assets/contact/telegram.svg" alt="Telegram: @dusi84" width="32.5%"></a><a href="https://wa.me/996554016042"><img src="assets/contact/whatsapp.svg" alt="WhatsApp: +996 554 016 042" width="32.5%"></a><br>
 <a href="mailto:altaiabdurahim07@gmail.com"><img src="assets/contact/email.svg" alt="Email: altaiabdurahim07@gmail.com" width="32.5%"></a><a href="https://www.instagram.com/ab.dussi"><img src="assets/contact/instagram.svg" alt="Instagram: @ab.dussi" width="32.5%"></a><a href="https://www.tiktok.com/@ab.dussi"><img src="assets/contact/tiktok.svg" alt="TikTok: @ab.dussi" width="32.5%"></a>
 </p>
 
